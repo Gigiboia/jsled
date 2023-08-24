@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS LED</title>
+    <link rel="stylesheet" href="style.css">
+    <title>JS liga LED</title>
 </head>
 <body>
+    <!--JavaScript em arquivo separado-->
 
-    <p>JavaScript pode modificar atributos</p>
+    <h2>JavaScript liga LED</h2>
 
-<p>Neste caso ele modifica o atributo src (source) de uma imagem</p>
+    <div class="caixa-flex">
+        <p>
+            <button class="button" onclick="verde()"> Verde</button>
+        </p>
+        <div id="imagem">
+            <img id="imagem2" src="led-pb.png" style="width:100px">
+        </div>
+        <p>
+            <button class="button" onclick="vermelho()">Vermelho</button>
+        </p>
+    </div>
 
-<button onclick="document.getElementById('myImage').src='green-led.png'">verde</button>
+    
+  
 
-<img id="myImage" src="green-led.png" style="width: 100px;">
+    
 
-<button onclick="document.getElementById('myImage').src='red-led.png'">Vermelho</button>
+    
 
-
+    <script src="script.js"></script>
+    
 </body>
 </html>
